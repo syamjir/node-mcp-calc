@@ -53,8 +53,8 @@ Ensure you have **Node.js** (v18 or higher) and **npm** installed.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/simple-mcp-calculator.git
-   cd simple-mcp-calculator
+   git clone https://github.com/your-username/node-mcp-calc.git
+   cd node-mcp-calc
    ```
 
 2. **Install dependencies:**
