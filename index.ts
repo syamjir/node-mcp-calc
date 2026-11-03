@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-import { validateNumbers } from "./validation ";
+import { validateNumbers } from "./validation .js"
 
 // 1. Create an MCP server instance
 const server = new McpServer({ name: "simple-calucalor-mcp-server", version: "1.0.0" })
