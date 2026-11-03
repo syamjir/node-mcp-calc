@@ -143,3 +143,22 @@ server.tool(
         };
     }
 );
+
+// 6. GREET USER
+server.tool("greet_user", "Greets the user with a personalized message", {
+    name: z.string().describe("Name of the user to greet"),
+},
+    async ({ name }) => {
+        return { content: [{ type: "text", text: `Hello, ${name}! Welcome to the Simple Calculator MCP Server.` }] }
+    })
+
+// 7. Start the server using Standard Input/Output transport (stdin/stdout)
+async function main() {
+    const transport = new StdioServerTransport();
+    await server.connect(transport);
+}
+
+main().catch((err) => {
+    console.error("Error starting the server:", err);
+    process.exit(1);
+})
